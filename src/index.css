@@ -6,7 +6,7 @@ html {
   font-family: "Poppins", sans-serif;
 }
 
-body {
+.custom-bg {
   background-image: url("./assets/images/bg-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;

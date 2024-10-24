@@ -14,7 +14,7 @@ const ProductPage = () => {
   );
 
   return (
-    <div className="p-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+    <div className="p-8 grid grid-cols-1 md:grid-cols-2 gap-14">
       <CustomSlider />
 
       {/* Product Details */}

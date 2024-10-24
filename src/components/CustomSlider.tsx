@@ -15,7 +15,7 @@ const settings = {
   speed: 500,
   slidesToShow: 1,
   slidesToScroll: 1,
-  arrows: true,
+  arrows: false,
 };
 
 const CustomSlider: React.FC = () => {

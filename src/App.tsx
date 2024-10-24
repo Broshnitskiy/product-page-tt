@@ -5,7 +5,7 @@ import { Toaster } from "react-hot-toast";
 
 function App() {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen custom-bg">
       <Header />
       <main className="container mx-auto">
         <ProductPage />
