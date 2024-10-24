@@ -37,9 +37,9 @@ const Header = () => {
           isMobileMenuOpen ? "block" : "hidden"
         }`}
       >
-        <ul className="flex flex-col md:flex-row gap-6 md:gap-8 p-4 md:p-0 md:ml-auto">
+        <ul className="flex flex-col md:flex-row gap-6 md:gap-8 p-4 md:p-0 md:ml-auto text-gray-600">
           {["Home", "Shop", "Contact", "Cart"].map((el) => (
-            <li key={el} className="cursor-pointer">
+            <li key={el} className="cursor-pointer bg-gray-200 p-1 rounded">
               {el}
             </li>
           ))}

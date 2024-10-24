@@ -4,6 +4,8 @@ import CustomSelect from "components/CustomSelect";
 import CustomSlider from "components/CustomSlider";
 import { ProductColors, ProductSizes } from "enums";
 import { colorOptions, sizeOptions } from "data-options";
+import toast from "react-hot-toast";
+import { Button, Heading, Text } from "@radix-ui/themes";
 
 const ProductPage = () => {
   const [selectedSize, setSelectedSize] = useState<string>(ProductSizes.M);
@@ -17,14 +19,21 @@ const ProductPage = () => {
 
       {/* Product Details */}
       <div className="flex flex-col justify-between gap-6">
-        <h1 className="text-4xl font-bold text-gray-800">
+        <Heading
+          as="h1"
+          size={"8"}
+          className="text-4xl font-bold text-gray-800 font-sans"
+        >
           Modern Stylish Chair
-        </h1>
-        <p className="text-lg text-gray-600">
+        </Heading>
+
+        <Text as="p" className="text-lg text-gray-600 font-sans">
           This stylish chair is perfect for any modern home. Comfortable and
           elegant, it fits perfectly into any living room or office.
-        </p>
-        <span className="text-2xl font-bold text-black">$199.99</span>
+        </Text>
+        <Text as="span" className="text-2xl font-bold text-black font-sans">
+          $199.99
+        </Text>
 
         <div className="flex gap-6">
           {/* Size Selector */}
@@ -44,9 +53,16 @@ const ProductPage = () => {
           />
         </div>
 
-        <button className="w-full py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition duration-300">
+        <Button
+          onClick={() => {
+            toast.success("Successfully added!");
+          }}
+          size="3"
+          style={{ cursor: "pointer" }}
+          className="w-full py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition duration-300"
+        >
           Add to Cart
-        </button>
+        </Button>
       </div>
     </div>
   );

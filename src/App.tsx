@@ -1,6 +1,7 @@
 import Footer from "components/Footer";
 import Header from "components/Header";
 import ProductPage from "pages/ProductPage";
+import { Toaster } from "react-hot-toast";
 
 function App() {
   return (
@@ -10,6 +11,8 @@ function App() {
         <ProductPage />
       </main>
       <Footer />
+
+      <Toaster />
     </div>
   );
 }
