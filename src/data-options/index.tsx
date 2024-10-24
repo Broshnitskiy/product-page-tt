@@ -3,17 +3,17 @@ import { ProductColors, ProductSizes } from "enums";
 export const sizeOptions = [
   {
     value: ProductSizes.S,
-    label: "Small",
+    label: ProductSizes.S,
     className: "bg-slate-500 cursor-pointer",
   },
   {
     value: ProductSizes.M,
-    label: "Medium",
+    label: ProductSizes.M,
     className: "bg-slate-500 cursor-pointer",
   },
   {
     value: ProductSizes.L,
-    label: "Large",
+    label: ProductSizes.L,
     className: "bg-slate-500 cursor-pointer",
   },
 ];
@@ -37,6 +37,6 @@ export const colorOptions = [
   {
     value: ProductColors.Brown,
     label: "Brown",
-    className: "bg-brown-500 text-white cursor-pointer",
+    className: "bg-red-900 text-white cursor-pointer",
   },
 ];

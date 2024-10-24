@@ -1,7 +1,7 @@
 export enum ProductSizes {
-  S = "S",
-  M = "M",
-  L = "L",
+  S = "Small",
+  M = "Medium",
+  L = "Large",
 }
 
 export enum ProductColors {
